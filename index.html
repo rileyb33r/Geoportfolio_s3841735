@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+<head> <!--Contains Metadata only. Little needs to be changed in this section-->
+<meta charset="utf-8">
+<title>Geoportfolio</title> <!--Changes the name on the tab-->
+	<link rel="stylesheet" href="geoportfoliocss.css"> <!--#ID# #CSS# Put the name of your CSS document and file extension in href e.g. href="geoportfolio.css"-->
+	<link rel="icon" type="image/x-icon" href="favicon.png"> <!--#ID# #FAVICON# This changes the picture shown on the tab. Change the file name under href to your desired image e.g. href="favicon.png"-->
+</head>
+
+<body> <!--Everything in between <body> and </body> affects the display of your Geoportfolio and what is shown-->
+	<!--Start of navigation bar-->
+	<div id="sidebar" class="sidebar-animate-open" style="display:none"> <!--MUST BE AT TOP OF DOCUMENT-->
+		<button onclick="close_sidebar()" class="sidebar-menu-button close-sidebar-button">&times;</button>
+		<a href="#topofpage" class="sidebar-menu-button mainbutton">Home</a>
+		<a href="#about" class="sidebar-menu-button mainbutton">About</a>
+		<a href="#academicinfo" class="sidebar-menu-button mainbutton">Academic Information</a>
+		<a href="#industryexperience" class="sidebar-menu-button mainbutton">Industry Experience</a>
+		<a href="#sap" class="sidebar-menu-button mainbutton">Skills and Proficiencies</a>
+		<a href="#credits" class="sidebar-menu-button mainbutton">Acknowledgements</a>
+		<div class="other-sidebar-info">
+			<table class="sidebar-contact-table"> 
+				<tr>
+					<td>
+						<a href="https://au.linkedin.com/" target="_blank"><img src="linkedin.png" class="sidebar-images"></a> <!-- #ID# #LINKEDIN# Change LinkedIn link to one of your profile page -->
+					</td>
+					<td>
+						<a href="https://www.linkedin.com/in/riley-beer-096668285/" target="_blank">LinkedIn</a> <!-- #ID# #LINKEDIN# Change LinkedIn link to one of your profile page-->
+					</td>
+				</tr>
+				<tr>
+			</table>
+		</div>
+	</div>
+	<!--End of navigation bar-->
+
+	<div class="header"> <!--Code for Header that opens the sidebar. DO NOT TOUCH-->
+		<button class="sidebar-menu-button open-sidebar-button" onclick="open_sidebar()">&#9776;</button>
+	</div>
+	
+	<div class="mapbgdiv" id="topofpage">
+		<img src="background.jpg" alt="map" class="mapbg">
+		<div class="title">
+			<h1>Geoportfolio</h1>
+			<h2>Riley Beer</h2> <!-- #ID# #NAME# INSERT YOUR NAME HERE-->
+		</div>
+	</div>
+
+	<!--ABOUT-->
+	<div class="intro bar" id="about"><h2>About Me</h2></div> <!-- #ID# #INTROHEADING# Change the text of the introduction bar here-->
+	<div class="about">
+		This website is the geoportfolio of Riley Beer which was made for the subject Professional Practice (GEOM2116). This website entails
+		information that is academically and profesionally related to the field of geospatial science
+		<p>
+		I grew up in Torquay, Australia and as of September 2023, I am in my fourth and final year of the 
+		Bachelor of Science (Surveying) (Honours) Degree. I have interests in working within the surveying industry across a range of disaplines such as cadastral,  
+		mining and remote sensing areas. My current Capstone Projects involve using SfM data collected from UAV to monitor coastal cliff movements along the 
+		Surf Coast. I look forward to completing this project at the end of this semester and completing similar research projects out in the workforce.
+		</p>
+		<p>
+		My own personal hobbies are motorbike riding, running and playing golf.
+		</p>	
+	<img src="profile-picture.jpg" class="self-portrait"> 
+	<!-- #ID# #SELFPORTRAIT# Change the img src name to match the name of your own self-portrait or delete my image and name your image the same name and place it in the same folder -->
+	</div>
+	
+	<!--ACADEMIC PORTFOLIO-->
+	<div class="pagetitle" id="academicinfo">
+        <span class="title-ul">Academic Portfolio Overview</span>
+    </div>
+
+	<!--SUBJECT 1-->
+	
+	<div class="bar"><h2>Cartography</h2></div> <!-- #ID# #SUBJECT# Change the text to fit a subject you gave done yourself-->
+	<div class="academic-intro">
+		Throughout my degree, I completed two Cartography units. The class assesments consisted of creating maps using various spatial data collected out in the field
+		or sourced from opensource datasets from resources such as the Australian Bureau of Statistics (ABS). Throught the cartography courses I enjoyed the design
+		and creativity aspect, and found I really enjoyed making maps. It something that as a surveyor you don't nessesarily get to experiment with plan/map design 
+		so I found it very enjoyable and rewarding.
+		
+		<p>
+			Below are some of the maps that I have created for assesments across my degree:
+		</p>
+		<p>
+			<b>Note:</b> If map display is too small, right-click the image and 'Open in new tab' to allow zooming of the map.
+		</p>
+	</div>	
+	<div class="bar"><h3>Melbourne City Loop: POI's Across Melbourne</h3></div>
+	<img src="Screenshot 2023-09-11 171631.jpg" class="ls-image"> <!-- #ID# #PICTURE# Change to a picture of YOUR assignment images -->
+
+	<!--SUBJECT 2-->
+
+	<div class="bar"><h2>Applied Geospatial Techniques (AGT)</h2></div> <!-- #ID# #SUBJECT# Change the text to fit a subject you gave done yourself-->
+	<div class="academic-intro">
+		Applied Geospatial Techniques (AGT) combined core geospacial science disaplines and combined it into one unit. The unit is very practical and 
+		interesting as it goes through the whole process of a project, collecting the data, reducing the data, presenting the data, as seen below with the different images. 
+		The subject covers areas from three different disciplines:
+		<ul>
+			<li>Surveying</li>
+			<li>Geographical Information Systems (GIS)</li>
+			<li>Cartography</li>
+		</ul>
+		<p>
+		The assignment was about the proposal of creating an amphitheatre at Deep Rock Oval located at Yarra Bend Park.
+		The main deliverables of the subject consisted of producing:
+		<ul>
+			<li>Topographic survey map of Deep Rock Oval</li>
+			<li>3D generated scene of the proposed amphitheatre</li>
+			<li>Amphitheatre and Pathway plan of the proposed site</li>
+			<li>Final map of the amphitheatre proposal</li>
+		</ul>
+		</p>
+		<p>
+			The topographic survey map was created using surveying data obtained on the field using a total station at Deep Rock Oval, Yarra Bend Park.
+			Unfortunately, we weren't able to collect our data due to the Covid Pandemic so our raw data was provided to us. The topographic map was created using LISCAD.SEE and LISCAD.CAD. 
+			The 3D generated scene was created using the ArcGIS suite program ArcScene while the raw data was
+			modified in ArcMap. The proposed pathway was created using ArcMap by using the GIS program to generate the pathway based on slope angle and the amphitheatre
+			based on z-values. The final map used Adobe Illustrator to create the map along with ArcMap for exporting the 2D amphitheathre image and ArcScene for 
+			exporting the image of the 3D scene.
+		</p>
+		<p>
+			<b>Note:</b> If map display is too small, right-click the image and 'Open in new tab' to allow zooming of the map.
+		</p>
+	</div>	
+
+	<div class="bar"><h3>Topographic survey map (Surveying component)</h3></div>
+	<img src="RawData.JPG" class="agt-survey"> <!-- #ID# #PICTURE# Change to a picture of YOUR assignment images -->
+	<div class="bar"><h3>3D Amphitheatre and pathway plan (GIS component)</h3></div>
+	<img src="Screenshot 2023-09-26 211056.png" class="agt-gis"> <!-- #ID# #PICTURE# Change to a picture of YOUR assignment images -->
+	<div class="bar"><h3>Final map of proposal(Cartography component)</h3></div>
+	<img src="DeepRock.PNG" class="agt-carto"> <!-- #ID# #PICTURE# Change to a picture of YOUR assignment images -->
+	<p>
+			
+	</p>
+
+	<div class="bar"><h2>Capstone Project</h2></div> <!-- #ID# #SUBJECT# Change the text to fit a subject you gave done yourself-->
+	<div class="academic-intro">
+		I am currently completing a Capstone Project, which is required in your final year at RMIT, surrounding how structure from motion (SfM) techniques 
+		can be used to montior cliff erosion and acreation along the Surf Coast. I have found it really challenging learning new concepts and using
+		new programs such as CloudCompare, Pix4D and DroneDeploy. The project has allowed me to delve deep into the drone space as it is something that
+		I find interesting and hope to persue later in my professional career. Below I have attached my Capstone Poster which introduces the main ideas 
+		that the project aims to do.
+		<p>
+			<b>Note:</b> If map display is too small, right-click the image and 'Open in new tab' to allow zooming of the map.
+		</p>
+	</div>	
+	<div class="bar"><h3>Capstone Project: Drone Imagery: How Can SfM be Used to Monitior Cliff Faces</h3></div>
+	<img src="CapstoneImage.jpg" class="ls-image"> <!-- #ID# #PICTURE# Change to a picture of YOUR assignment images -->
+	<p>
+	<p>
+	</p>
+
+	<div class="pagetitle" id="industryexperience">
+        <span class="title-ul">Industry Experience</span>
+    </div>
+	<div class="academic-intro">
+		This page will briefly cover all my work experience (as of September 2023) within the Surveying industry. I have worked at two companies Willis Setouts and 
+		Surveys and am now currently working at Hamilton Land Surveyors. This page will outline the experience I have gained and skills I have learned during my time 
+		at both companies with a brief overview of my role in each job.
+	
+
+	</div>
+
+	<!--COMPANY 1-->
+
+    <div class="bar"><h3>Willis Setouts & Surveys</h3></div> <!-- #ID# #COMPANY# Change to your company name-->
+	<img src="Willislogo.PNG" class="company-logo">
+	<div class="job-title">Student Surveyor </div> <!-- #ID# #COMPANY# Change to your company position-->
+	<div class="job-time">Jan 2022 - Dec 2022</div> <!--Change the month and year worked-->
+	<div class="job-overview">
+		During my third year of my studies of Bachelor of Applied Science I worked at Willis Setouts and
+		Surveys as a student surveyor. I worked part time over the course of the year and gained experience
+		in the construction surveying industry. I worked as part of a team that conducted slab set-outs for
+		volume builders such as Metricon, Simmonds, Homebuyers Group and Boutique. During my time at
+		Willis Setouts and Surveys I was exposed to Trimble total stations to complete field work and
+		programmes such as lisCAD and AutoCAD.
+		<p>
+		I learnt a lot about reading builders floor plans and POS during my time at Willis. At the start I found
+		the plans confronting and overwhelming as there’s a lot of information to sift through. I found I
+		became more and more comfortable with interpreting plans and dissevering what I needed to
+		complete the lisCAD plans correctly. I further improved my skills with lisCAD drafting and drew on
+		skills I had learnt during my studies and developed new ones in areas that allowed me to complete
+		tasks quickly. Such as using functions such as ‘Bearing and Distance’ commands when creating points
+		at 90° of each other as well as other tips that I will carry throughout my professional career.
+		<p>
+		I worked for Willis for a year and found that during my time there I progressed quickly and learnt the
+		process of creating a LisCAD plans, uploading jobs to the Total Station, completing set outs a at a
+		rofessional standard and coming back to the office and uploading the completed job into the system.
+		</p>
+	</div>
+
+	<!--COMPANY 2-->
+
+	<div class="bar"><h3>Hamilton Land Surveyors</h3></div> <!-- #ID# #COMPANY# Change to your company name-->
+	<img src="hamilton_logo.png" class="company-logo">
+	<div class="job-title">Survey Technician</div> <!-- #ID# #COMPANY# Change to your company position-->
+	<div class="job-time">August 2023 - Present (as of September 2023)</div> <!--Change the month and year worked-->
+	<div class="job-overview">
+		My title at Hamilton Land Surveyors is a Survey Technician which entails assisting the party leader during field days and create related plans within the office. The job allows exposure to  
+		the cadastal side of surveying and gives me a different insight into the Surveying Industry to my previous employment. I have been really enjoying this disapline
+		of surveying and have devoloped my skills in areas such as re-establishment surveys, feature and level surveys and experience in processes such as subdivisons
+		and various other applications. 
+		<p>
+		I have enjoyed the field work that I have completed and have learnt alot of skills that I will carry into my professional career. I have gained alot of confidence
+		and take alot of pride in my work. I look forward to taking on every oppertunity that presents itself and to continue to grow my knowledge across all fields of
+		the surveying industry. 
+		</p>
+	</div>
+
+	<!--Skills and Proficiencies table-->
+	<div class="bar" style="top:57px" id="sap"><h2>Skills and Proficiencies</h2></div> <!-- #ID# #SKILLS# -->
+    <div class="skills">
+        <table class="icontable">
+            <tr>
+                <td><img src="mapping.png" class="iconimages"></td>
+				<td>Surveying Fundamentals</td>
+                <td><img src="dwg.png" class="iconimages"></td>
+				<td>LisCAD</td>
+            </tr>
+            <tr>
+                <td><img src="map.png" class="iconimages"></td>
+				<td>Cartographic Principles</td>
+                <td><img src="adobe-illustrator.png" class="iconimages"></td>
+				<td>Adobe Illustrator</td>
+            </tr>
+            <tr>
+                <td><img src="satellite.png" class="iconimages"></td>
+				<td>Remote Sensing</td>
+                <td><img src="drone.png" class="iconimages"></td>
+				<td>Photogrammetry and Drone Mapping</td>
+            </tr>
+        </table>
+    </div>
+
+	<!-- #ID# #CREDITS#-->
+	<div class="pagetitle" id="credits">
+        <span class="title-ul">Credits and Attributions</span>
+    </div>
+    
+    <div class="academic-intro">
+       <b> The following programming languages and software were used to create the website</b>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Visual Studio Basic</li>
+        </ul>
+       <b>The deliverables contains content from the following subjects:</b>2
+        <ul>
+            <li>Cartography 2 (GEOM2079)</li>
+            <li>Applied Geospatial Techniques (GEOM2083)</li>
+        </ul>
+       <b>Special thanks to the following people who have helped me make this website with their expertise and guidance:</b>
+    
+        As per the policy of using the Flaticons with a free account, the attributions and crediting of the creators of the icons are as below:
+		
+	<div class="bar"><h2>Attributions of icons used:</h2></div>
+    <table id="attribution-table">
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/land-surveying" title="survey icons">Survey icons created by juicy_fish - Flaticon</a>
+            <th><img src="mapping.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/autocad" title="autocad icons">Autocad icons created by Flowicon - Flaticon</a></th>
+            <th><img src="dwg.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/adobe-illustrator" title="adobe illustrator icons">Adobe illustrator icons created by Freepik - Flaticon</a></th>
+            <th><img src="adobe-illustrator.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/drone" title="drone icons">Drone icons created by Smashicons - Flaticon</a></th>
+            <th><img src="Icons/drone-icon.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/satellite" title="satellite icons">Satellite icons created by Freepik - Flaticon</a></th>
+            <th><img src="Icons/rs-satellite-icon.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a></th>
+            <th><img src="linkedin.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/twitter" title="twitter icons">Twitter icons created by Bogdan Rosu - Flaticon</a></th>
+            <th><img src="twitter.png" class="icon-attribute"></th>
+        </tr>
+    </table>
+	</div>
+
+
+
+	<div class="footer"> <!-- #ID# #FOOTER# -->
+		<div class="compilationinformation"> <!-- #ID# #COMPINFO# -->
+			<b>Compilation information</b>
+			<br>Website made in Adobe Dreamweaver and Visual Studio Code.
+			<br>HTML and CSS code written by Odeo as part of undergraduate Professional Practice course (GEOMOD10).
+		</div>
+		<table class="contacttable">
+			<caption><h2>Contact Information</h2></caption>
+			<tr>
+				<th><img src="mappin.png" alt="pointer" class="contactimages"></th>
+				<th><img src="mail.png" alt="email" class="contactimages"></th>
+				<th><img src="phone.png" alt="phone" class="contactimages"></th>
+			</tr>
+			<tr>
+				<th>
+					Work address:
+					<br>1 Great Ocean Road, Torquay, Victoria, 3228</th>
+				<th>
+					Email Me here:
+					<br><a href = "s3841735@student.rmit.edu.au">s3841735@student.rmit.edu.au</a>
+				</th>
+				<th>Mobile:
+					<br>3102-310-771
+				</th>
+			</tr>
+		</table>
+	</div>
+</body>
+<script> //Code for opening and closing sidebar. DO NOT TOUCH OR EDIT THIS AS THIS IS WHAT WORKS THE SIDEBAR NAVIGATION
+    function open_sidebar() {
+      document.getElementById("sidebar").style.display = "block";
+    }
+    function close_sidebar() {
+      document.getElementById("sidebar").style.display = "none";
+    }
+</script>
+</html>
